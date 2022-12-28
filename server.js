@@ -19,15 +19,15 @@ app.use(cookies(COOKIE_SECRET))
 app.use(express.json())
 app.use('/api', require('./router'))
 
-const STATIC_PATH = path.resolve(__dirname, './client/build')
-const INDEX_PATH = path.resolve(__dirname, './client/build', 'index.html')
-app.use(express.static(STATIC_PATH))
+// const STATIC_PATH = path.resolve(__dirname, './client/build')
+// const INDEX_PATH = path.resolve(__dirname, './client/build', 'index.html')
+// app.use(express.static(STATIC_PATH))
 
-app.get('*', (req, res) => {
-    return res
-    .status(200)
-    .sendFile(INDEX_PATH)
-})
+// app.get('*', (req, res) => {
+//     return res
+//     .status(200)
+//     .sendFile(INDEX_PATH)
+// })
 
 
 app.listen(port, () => {
