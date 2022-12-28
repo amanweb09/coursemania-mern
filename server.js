@@ -7,7 +7,7 @@ const port = PORT || 3100
 
 const cors = require('cors')
 app.use(cors({
-    origin: [REACT_APP_URL, 'http://192.168.1.33:3000'],
+    origin: [REACT_APP_URL],
     credentials: true
 }))
 

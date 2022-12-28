@@ -1,17 +1,19 @@
 const {
 
+    NODE_ENV,
     PORT,
     REACT_APP_URL,
     MONGODB_CONNECTION_URL,
     PASSWORD_SECRET,
     ACCESS_SECRET,
     REFRESH_SECRET,
-    COOKIE_SECRET
+    COOKIE_SECRET,
+    VERCEL_URL
 
 }  = process.env
 
 module.exports.PORT = PORT
-module.exports.REACT_APP_URL = REACT_APP_URL
+module.exports.REACT_APP_URL = NODE_ENV === 'development' ? REACT_APP_URL : VERCEL_URL
 module.exports.CLOUD_DB_URL = MONGODB_CONNECTION_URL
 module.exports.PASSWORD_SECRET = PASSWORD_SECRET
 module.exports.ACCESS_SECRET = ACCESS_SECRET
