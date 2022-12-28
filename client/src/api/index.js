@@ -2,7 +2,7 @@ import axios from 'axios'
 import { store } from '../store'
 
 const instance = axios.create({
-    baseURL: process.env.REACT_APP_BASE_URL || 'http://localhost:3100',
+    baseURL: process.env.NODE_ENV === 'production' ? process.env.REACT_APP_RENDER_ADDRESS : 'http://localhost:3100',
     withCredentials: true,
     headers: {
         Accept: 'application/json',
