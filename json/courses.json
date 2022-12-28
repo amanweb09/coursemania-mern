@@ -1,0 +1,78 @@
+[
+    {
+        "title": "React.js Mastery in 30 Days",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+        "desc": "This is the best react course on the planet",
+        "price": 799,
+        "rating": 5,
+        "category": "tech",
+        "instructor": "63a88071a4ff124a588bdae7",
+        "details": ["react hooks", "state management with redux"],
+        "length": 10,
+        "modules": [
+            {
+                "title": "Basics",
+                "content": [
+                    "63a8825fa4ff124a588bdaf0"
+                ]
+            },
+            {
+                "title": "Folder structure",
+                "content": [
+                    "63a8825fa4ff124a588bdaf0"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Amazon FBA: Zero to Hero",
+        "image": "/images/amazon.png",
+        "desc": "Best Amazon FBA course on the planet",
+        "price": 899,
+        "rating": 4,
+        "category": "business",
+        "instructor": "63a88071a4ff124a588bdae8",
+        "details": ["selecting items", "shipping"],
+        "length": 3,
+        "modules": [
+            {
+                "title": "Basics",
+                "content": [
+                    "63a8825fa4ff124a588bdaf1"
+                ]
+            },
+            {
+                "title": "Setting up account",
+                "content": [
+                    "63a8825fa4ff124a588bdaf1"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Python: Basic to Advanced",
+        "image": "https://cdn3d.iconscout.com/3d/free/thumb/python-language-logo-6563563-5453026.png",
+        "desc": "Best Amazon Python course on the planet",
+        "price": 499,
+        "rating": 3,
+        "category": "tech",
+        "instructor": "63a88071a4ff124a588bdae8",
+        "details": ["basics", "django"],
+        "length": 3,
+        "modules": [
+            {
+                "title": "Basics",
+                "content": [
+                    "63a8825fa4ff124a588bdaf2"
+                ]
+            },
+            {
+                "title": "Installation",
+                "content": [
+                    "63a8825fa4ff124a588bdaf2"
+                ]
+            }
+        ]
+    }
+
+]

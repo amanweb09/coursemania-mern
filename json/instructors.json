@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Andrew Tate",
+        "profilePicture": "instructor1.jpg",
+        "skills": ["tech"],
+        "contactDetails": {
+            "phone": "+91256895955",
+            "email": "dummy@gmail.com"
+        }
+    },
+    {
+        "name": "John Doe",
+        "profilePicture": "instructor2.jpg",
+        "skills": ["business"],
+        "contactDetails": {
+            "phone": "+91256895955",
+            "email": "dummy@gmail.com"
+        }
+    },
+    {
+        "name": "Kapil Kathpal",
+        "profilePicture": "instructor3.jpg",
+        "skills": ["upsc"],
+        "contactDetails": {
+            "phone": "+91256895955",
+            "email": "dummy@gmail.com"
+        }
+    }
+]

@@ -1,0 +1,39 @@
+POST http://localhost:3100/api/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "suneo",
+    "email": "suneo@gmail.com",
+    "password": "Suneo123"
+}
+
+########
+
+POST http://localhost:3100/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "suneo@gmail.com",
+    "password": "Suneo123"
+}
+
+#####
+
+GET http://localhost:3100/api/courses HTTP/1.1
+Content-Type: application/json
+
+#####
+
+GET http://localhost:3100/api/courses/123 HTTP/1.1
+Content-Type: application/json
+
+
+#####
+GET http://localhost:3100/api/test HTTP/1.1
+Content-Type: application/json
+
+
+#####
+GET http://localhost:3100/api/video/63a929fedb186dd9c750275f HTTP/1.1
+Content-Type: application/json
+Range: ''

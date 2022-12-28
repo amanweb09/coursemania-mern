@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    outline: none;
+    background: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.loading {
+    animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
