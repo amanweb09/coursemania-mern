@@ -6,7 +6,9 @@ const instance = axios.create({
     withCredentials: true,
     headers: {
         Accept: 'application/json',
-        'Content-type': 'application/json'
+        'Content-type': 'application/json',
+        'Access-Control-Allow-Credentials': true,
+        'Access-Control-Allow-Origin': process.env.NODE_ENV === 'production' ? process.env.REACT_APP_RENDER_ADDRESS : 'http://localhost:3100'
     }
 })
 
@@ -21,11 +23,7 @@ export const getCourseById = async (_id) => { return await instance.get('/api/co
 
 export const enrollUser = async (data) => { return await instance.post('/api/enroll', data) }
 
-export const getStreamContent = async (_id) => {
-    return await instance.get('/api/video/' + _id, {
-        headers: { "Range": "bytes=200-1000" }
-    })
-}
+export const getStreamContent = async (_id) => {return await instance.get('/api/video/' + _id)}
 
 instance
     .interceptors
