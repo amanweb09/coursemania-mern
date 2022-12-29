@@ -50,7 +50,11 @@ class AuthController {
             user.refreshToken = refreshToken
             await user.save()
 
-            res.cookie('at', accessToken, { httpOnly: true })
+            res.cookie('at', accessToken, {
+                httpOnly: true,
+                sameSite: 'none',
+                secure: true
+            })
             return res.status(200).json({ message: 'signup successful!', user: new UserDTO(user) })
 
         } catch (error) {
@@ -106,7 +110,11 @@ class AuthController {
             user.refreshToken = refreshToken
             await user.save()
 
-            res.cookie('at', accessToken, { httpOnly: true })
+            res.cookie('at', accessToken, {
+                httpOnly: true,
+                sameSite: 'none',
+                secure: true
+            })
             return res.status(200).json({ message: 'login successful!', user: new UserDTO(user) })
 
         } catch (error) {
